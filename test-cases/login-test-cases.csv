@@ -1,0 +1,23 @@
+Test Case ID,Module,Title,Pre-conditions,Test Steps,Test Data,Expected Result,Actual Result,Status,Bug ID
+TC_LOGIN_001,Login,Valid Login,"1. User has a registered account
+2. Valid User and Password","1. Go to login page https://www.saucedemo.com/
+2. Enter email
+3. Enter password
+4. Click 'Submit'","Username : standard_user
+Pass : secret_sauce",User is redirected to dashboard.,Fully functional and loaded dashboard,Pass,
+TC_LOGIN_002,Login,Blocked User,User has been blocked,"1. Go to login page https://www.saucedemo.com/
+2. Enter email
+3. Enter password
+4. Click 'Submit'","Username : locked_out_user
+Pass : secret_sauce","An error message ""Sorry, this user has been locked out.""",Blocked user will receive an error message and unable to login with the same id.,Pass,
+TC_LOGIN_003,Login,X user has UI Problem,User with username : problem_user is facing UI bug,"1. Go to login page https://www.saucedemo.com/
+2. Enter email
+3. Enter password
+4. Click 'Submit'","Username : problem_user
+Pass : secret_sauce",Fully loaded product with the right title and the right images according to the product,all product are showing dog image.,Failed,https://irfanfaizchoo.atlassian.net/browse/SAUC-1
+TC_LOGIN_004,Login,case sensitive credentials,"Username : Standard_user (Capital ""S)
+Pass : secret_sauce","1. Go to login page https://www.saucedemo.com/
+2. Enter email
+3. Enter password
+4. Click 'Submit'","Username : Standard_user
+Pass : secret_sauce",Credentials Error,"Error message : ""Username and password do not match any user in this service""",Pass,
