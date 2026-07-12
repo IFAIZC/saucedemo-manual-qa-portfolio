@@ -14,7 +14,7 @@ TC_LOGIN_003,Login,X user has UI Problem,User with username : problem_user is fa
 2. Enter email
 3. Enter password
 4. Click 'Submit'","Username : problem_user
-Pass : secret_sauce",Fully loaded product with the right title and the right images according to the product,all product are showing dog image.,Failed,https://irfanfaizchoo.atlassian.net/browse/SAUC-1
+Pass : secret_sauce",Fully loaded product with the right title and the right images according to the product,all product are showing dog image.,Failed,
 TC_LOGIN_004,Login,case sensitive credentials,"Username : Standard_user (Capital ""S)
 Pass : secret_sauce","1. Go to login page https://www.saucedemo.com/
 2. Enter email

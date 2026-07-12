@@ -10,7 +10,6 @@ While testing the login module with SauceDemo's `problem_user` account,
 found that **all products display the same (incorrect) image** on the
 inventory page instead of their actual product images.
 
-- **Jira ticket:** [SAUC-1](https://irfanfaizchoo.atlassian.net/browse/SAUC-1)
 - **Test case:** `TC_LOGIN_003`
 - **Severity:** Minor | **Status:** Failed
 

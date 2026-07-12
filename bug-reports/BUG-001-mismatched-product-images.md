@@ -1,8 +1,7 @@
 # BUG-001: problem_user sees mismatched product images
 
-**Jira Ticket:** SD-1 (https://irfanfaizchoo.atlassian.net/browse/SAUC-1)
 **Test Case:** TC_LOGIN_003
-**Severity:** Minor | 
+**Severity:** Minor 
 **Priority:** Medium
 
 ## Steps to Reproduce
@@ -15,6 +14,9 @@ Each product shows its correct image.
 
 ## Actual
 All products show the same dog image.
+
+## Jira Ticket
+![alt text](BUG-001-jira-ticket.png)
 
 ## Screenshot
 ![alt text](BUG-001-dog-img.png)
