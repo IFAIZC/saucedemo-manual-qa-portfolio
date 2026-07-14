@@ -16,7 +16,7 @@ inventory page instead of their actual product images.
 
 ## BUG-002
 While testing the cart module with the `standard_user` account, founded 
-that **it by pass the user address input and went straight to payment confirmation page** without any inputs.
+that **it by pass the user address input and went straight to payment confirmation page** without any .
 
 - **Test case:** `TC_CART_005`
 - **Severity:** Major | **Status:** Failed
