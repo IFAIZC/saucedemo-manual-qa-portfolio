@@ -1,0 +1,27 @@
+# BUG-001: Checkout without product, It by pass the user address input and went straight to payment confirmation page
+
+**Test Case:** TC_CART_005
+**Severity:** Major 
+**Priority:** High
+
+## Steps to Reproduce
+1. login via the test data credentials
+2. click cart button (top right)
+3. click ""checkout""
+4. key in "" "" empty space bar on all inputs.
+5. Click ""Finish"""
+
+## Expected
+Error message/To detect empty input , for example spacebar,dot and etc. valid numbers, minimum 5 digits and less than 10 digits
+
+## Actual
+It by pass the user address input and went straight to payment confirmation page and able to checkout right away
+
+## Jira Ticket
+-
+
+## Screenshot
+![alt text](image.png)
+![alt text](image-1.png)
+![alt text](image-2.png)
+![alt text](image-3.png)

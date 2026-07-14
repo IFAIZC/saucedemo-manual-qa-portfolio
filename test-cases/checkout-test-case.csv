@@ -1,0 +1,45 @@
+Test Case ID,Module,Title,Pre-conditions,Test Steps,Test Data,Expected Result,Actual Result,Status,Bug ID
+TC_CART_001,Cart,Add product to cart,"1. Logged in via ""standard_user"" id","1. login via the test data credentials
+2. click any product in the main dashboard","Username : standard_user
+Pass : secret_sauce",cart logo should add up upon products added to the cart ,Cart Logo shows x number of products upon adding products to cart,Pass,
+TC_CART_002,Cart,Remove product from cart,"1. Logged in via ""standard_user"" id
+2. Products has been added to cart","1. login via the test data credentials
+2. click cart button on the top right
+3. click the ""remove"" button","Username : standard_user
+Pass : secret_sauce","1. product should be removed from the cart
+2. cart logo should be subtracted upon removing products from the cart",Product are removed and the cart counter will be subtracted,Pass,
+TC_CART_003,Checkout,Checkout with product,"1. Logged in via ""standard_user"" id
+2. Products has been added to cart
+","1. login via the test data credentials
+2. add products to cart
+3. click cart button (top right)
+4. click ""checkout""
+5. Input First Name, Last Name & zip/postal code
+6. Click ""Finish""","Username : standard_user
+Pass : secret_sauce",checkout complete/success message,"Success Message : ""Thank you for your order!
+Your order has been dispatched, and will arrive just as fast as the pony can get there!""",Pass,
+TC_CART_004,Checkout,Checkout with product,"1. Logged in via ""standard_user"" id
+2. Products has been added to cart
+","1. login via the test data credentials
+2. add products to cart
+3. click cart button (top right)
+4. click ""checkout""
+5. Leave inputs empty
+6. Click ""Finish""","Username : standard_user
+Pass : secret_sauce",Error message : Fill in the inputs/missing inputs,"Error message appeared, to fill in the input bar",Pass,
+TC_CART_005,Checkout,Checkout without product,"1. Logged in via ""standard_user"" id
+2. ""0"" Product in the cart
+","1. login via the test data credentials
+2. click cart button (top right)
+3. click ""checkout""
+4. key in "" "" empty space bar on all inputs.
+5. Click ""Finish""","Username : standard_user
+Pass : secret_sauce","Error message/To detect empty input , for example spacebar,dot and etc. valid numbers, minimum 5 digits and less than 10 digits",It by pass the user address input and went straight to payment confirmation page,Failed,
+TC_CART_006,Checkout,Checkout without product,"1. Logged in via ""standard_user"" id
+2. ""0"" Product in the cart
+","1. login via the test data credentials
+2. click cart button (top right)
+3. click ""checkout""
+","Username : standard_user
+Pass : secret_sauce","1.Error message/To detect empty product, to add products before checkout
+2. checkout button should be disabled IF product < 0",It by pass the cart quantity conditon and went straight into collecting user address.,Failed,
