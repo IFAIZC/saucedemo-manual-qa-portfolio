@@ -6,12 +6,20 @@ reporting, and exploratory testing — as part of my transition into a
 QA Engineer role.
 
 ## 🐛 Highlight: Bug Found
+## BUG-001
 While testing the login module with SauceDemo's `problem_user` account,
 found that **all products display the same (incorrect) image** on the
 inventory page instead of their actual product images.
 
 - **Test case:** `TC_LOGIN_003`
 - **Severity:** Minor | **Status:** Failed
+
+## BUG-002
+While testing the cart module with the `standard_user` account, founded 
+that **it by pass the user address input and went straight to payment confirmation page** without any inputs.
+
+- **Test case:** `TC_CART_005`
+- **Severity:** Major | **Status:** Failed
 
 Full repro steps in [`bug-reports/`](./bug-reports/).
 
